@@ -62,3 +62,31 @@ body{
 .showcase-box cite{
   font-size: 30px;
 }
+
+#main{
+  float: left;
+  width:70%;
+  padding: 30px 10px;
+  box-sizing: border-box;
+}
+
+#sidebar{
+  float:right;
+  width:30%;
+  padding: 10px 10px;
+  background-color: #424949;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+img{
+  width:100%;
+}
+
+#main-footer{
+  margin-top: 100px;
+}
+
+.clr{
+  clear:both;
+}
