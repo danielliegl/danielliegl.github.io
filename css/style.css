@@ -48,6 +48,7 @@ body{
   font-size: 30px;
   padding:1em;
   background-image: url(../images/showcase.jpg);
+  background-position: center center;
   color:white;
 }
 
