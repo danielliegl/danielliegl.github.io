@@ -1,2 +1,2 @@
 # danielliegl.github.io
-My Portfolio website!
+My portfolio website!
