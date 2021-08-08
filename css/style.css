@@ -65,14 +65,14 @@ body{
 
 #main{
   float: left;
-  width:70%;
+  width:60%;
   padding: 30px 10px;
   box-sizing: border-box;
 }
 
 #sidebar{
   float:right;
-  width:30%;
+  width:40%;
   padding: 10px 10px;
   background-color: #424949;
   margin-top: 20px;
@@ -87,6 +87,14 @@ img{
   margin-top: 100px;
 }
 
-.clr{
-  clear:both;
+@media(max-width:600px){
+  #main{
+    float:none;
+    width:100%;
+  }
+  #sidebar
+  {
+    float:none;
+    width:100%;
+  }
 }
