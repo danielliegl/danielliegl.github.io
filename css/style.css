@@ -99,3 +99,15 @@ img{
     width:100%;
   }
 }
+
+@media screen and (orientation: portrait){
+  #main{
+    float:none;
+    width:100%;
+  }
+  #sidebar
+  {
+    float:none;
+    width:100%;
+  }
+}
