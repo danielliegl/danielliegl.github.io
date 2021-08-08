@@ -100,7 +100,7 @@ img{
   }
 }
 
-@media screen and (orientation: portrait){
+@media(orientation: portrait){
   #main{
     float:none;
     width:100%;
