@@ -1,6 +1,11 @@
+$background-color: #f4f4f4;
+$grey: #424949;
+$green: #186a3b;
+
 *{
   margin:0;
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 .container{
   width:80%;
@@ -8,12 +13,12 @@
 }
 
 body{
-  background: #f4f4f4;
-  color: #333;
+  background: $background-color;
+  color: $navbar-grey;
 }
 
 #main-header{
-  background-color: #186a3b;
+  background-color: $green;
   color:white;
 }
 
@@ -24,7 +29,7 @@ body{
 }
 
 #navbar {
-  background-color: #424949;
+  background-color: $grey;
 }
 
 #navbar ul{
@@ -75,7 +80,7 @@ body{
   float:right;
   width:40%;
   padding: 10px 10px;
-  background-color: #424949;
+  background-color: $grey;
   margin-top: 20px;
   box-sizing: border-box;
 }
