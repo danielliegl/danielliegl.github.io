@@ -14,7 +14,8 @@ $green: #186a3b;
 
 body{
   background: $background-color;
-  color: $navbar-grey;
+  color: $grey;
+  padding-bottom: 100px;
 }
 
 #main-header{
@@ -72,8 +73,49 @@ body{
 #main{
   float: left;
   width:60%;
-  padding: 30px 10px;
+  padding: 30px 30px;
   box-sizing: border-box;
+
+  h2{
+    margin-bottom: 15px;
+  }
+}
+
+p{
+  font-size: 18px;
+}
+
+.triple{
+  display: flex;
+  clear: both;
+  margin: 1em auto;
+  color:$background-color;
+
+  .column{
+    float: right;
+    width:25%;
+    margin: 1em auto;
+    background-color: $grey;
+    padding: 1em;
+  }
+
+  h1{
+    color:$background-color;
+    text-align: center;
+  }
+
+  img{
+    background-color: $background-color;
+  }
+
+
+  li{
+    font-size: 18px;
+  }
+
+  ul{
+    margin-bottom: 0.4em;
+  }
 }
 
 #sidebar{
@@ -81,7 +123,7 @@ body{
   width:40%;
   padding: 10px 10px;
   background-color: $grey;
-  margin-top: 20px;
+  margin-top: 30px;
   box-sizing: border-box;
 }
 
@@ -89,8 +131,15 @@ img{
   width:100%;
 }
 
-#main-footer{
-  margin-top: 100px;
+#main-footer
+{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: $grey;
+  color: $background-color;
+  text-align: center;
 }
 
 @media(max-width:600px){
