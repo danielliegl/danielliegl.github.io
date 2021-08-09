@@ -21,31 +21,36 @@ body{
 #main-header{
   background-color: $green;
   color:white;
-}
 
-#main-header h1{
-  text-align: center;
-  padding:10px;
-  font-size: 40px;
+  h1{
+    text-align: center;
+    padding:0.5em;
+    font-size: 50px;
+  }
 }
 
 #navbar {
   background-color: $grey;
-}
+  li{
+    display:inline;
+    margin-right:15px;
+    font-size: 18px;
+  }
 
-#navbar ul{
-  padding:8px;
-  list-style: none;
-}
+  ul{
+    padding:8px;
+    list-style: none;
+    text-align: center;
+  }
 
-#navbar li{
-  display:inline;
-  margin-right:15px;
-}
+  a{
+    color:white;
+    text-decoration: none;
+  }
 
-#navbar a{
-  color:white;
-  text-decoration: none;
+  a:hover{
+    font-weight: 700;
+  }
 }
 
 #highlight{
@@ -63,11 +68,11 @@ body{
   margin:auto;
   font-size: large;
   padding:5px;
-  background-color:rgba(66, 73, 73, 0.5);
-}
-
-.showcase-box cite{
-  font-size: 30px;
+  background-color:rgba(66, 73, 73, 0.6);
+  border-radius: 10px;
+  cite{
+    font-size: 30px;
+  }
 }
 
 #main{
@@ -88,7 +93,7 @@ p{
 .triple{
   display: flex;
   clear: both;
-  margin: 1em auto;
+  margin: auto auto;
   color:$background-color;
 
   .column{
@@ -152,6 +157,14 @@ img{
     float:none;
     width:100%;
   }
+  .triple{
+    float: none;
+    width: 100%;
+    .column{
+      float: none;
+      width: 100%;
+    }
+  }
 }
 
 @media(orientation: portrait){
@@ -163,5 +176,13 @@ img{
   {
     float:none;
     width:100%;
+  }
+  .triple{
+    float: none;
+    width: 100%;
+    .column{
+      float: none;
+      width: 100%;
+    }
   }
 }

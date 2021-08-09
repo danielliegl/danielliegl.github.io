@@ -23,27 +23,33 @@ body {
 
 #main-header h1 {
   text-align: center;
-  padding: 10px;
-  font-size: 40px;
+  padding: 0.5em;
+  font-size: 50px;
 }
 
 #navbar {
   background-color: #424949;
 }
 
-#navbar ul {
-  padding: 8px;
-  list-style: none;
-}
-
 #navbar li {
   display: inline;
   margin-right: 15px;
+  font-size: 18px;
+}
+
+#navbar ul {
+  padding: 8px;
+  list-style: none;
+  text-align: center;
 }
 
 #navbar a {
   color: white;
   text-decoration: none;
+}
+
+#navbar a:hover {
+  font-weight: 700;
 }
 
 #highlight {
@@ -65,7 +71,8 @@ body {
   margin: auto;
   font-size: large;
   padding: 5px;
-  background-color: rgba(66, 73, 73, 0.5);
+  background-color: rgba(66, 73, 73, 0.6);
+  border-radius: 10px;
 }
 
 .showcase-box cite {
@@ -93,7 +100,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   clear: both;
-  margin: 1em auto;
+  margin: auto auto;
   color: #f4f4f4;
 }
 
@@ -155,6 +162,14 @@ img {
     float: none;
     width: 100%;
   }
+  .triple {
+    float: none;
+    width: 100%;
+  }
+  .triple .column {
+    float: none;
+    width: 100%;
+  }
 }
 
 @media (orientation: portrait) {
@@ -163,6 +178,14 @@ img {
     width: 100%;
   }
   #sidebar {
+    float: none;
+    width: 100%;
+  }
+  .triple {
+    float: none;
+    width: 100%;
+  }
+  .triple .column {
     float: none;
     width: 100%;
   }
