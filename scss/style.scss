@@ -1,6 +1,5 @@
-$background-color: #f4f4f4;
-$grey: #424949;
-$green: #186a3b;
+@import 'config';
+@import 'utilities';
 
 *{
   margin:0;
@@ -13,13 +12,12 @@ $green: #186a3b;
 }
 
 body{
-  background: $background-color;
-  color: $grey;
+  @include set-background($background-color);
   padding-bottom: 100px;
 }
 
 #main-header{
-  background-color: $green;
+  background-color: $primary-color;
   color:white;
 
   h1{
@@ -30,7 +28,7 @@ body{
 }
 
 #navbar {
-  background-color: $grey;
+  background-color: $dark-color;
   li{
     display:inline;
     margin-right:15px;
@@ -54,13 +52,13 @@ body{
 }
 
 #highlight{
+  color:white;
   min-height: fit-content;
   text-align: center;
   font-size: 30px;
   padding:1em;
   background-image: url(../images/showcase.jpg);
   background-position: center center;
-  color:white;
 }
 
 .showcase-box{
@@ -97,10 +95,11 @@ p{
   color:$background-color;
 
   .column{
+    @include set-background($dark-color);
     float: right;
     width:25%;
     margin: 1em auto;
-    background-color: $grey;
+    background-color: $dark-color;
     padding: 1em;
   }
 
@@ -127,7 +126,7 @@ p{
   float:right;
   width:40%;
   padding: 10px 10px;
-  background-color: $grey;
+  @include set-background($dark-color);
   margin-top: 30px;
   box-sizing: border-box;
 }
@@ -142,49 +141,8 @@ img{
   bottom: 0;
   width: 100%;
   padding: 10px;
-  background-color: $grey;
-  color: $background-color;
+  @include set-background($dark-color);
   text-align: center;
 }
 
-@media(max-width:600px){
-  #main{
-    float:none;
-    width:100%;
-  }
-  #sidebar
-  {
-    float:none;
-    width:100%;
-  }
-  .triple{
-    display: block;
-    float: none;
-    width: 100%;
-    .column{
-      float: none;
-      width: 100%;
-    }
-  }
-}
-
-@media(orientation: portrait){
-  #main{
-    float:none;
-    width:100%;
-  }
-  #sidebar
-  {
-    float:none;
-    width:100%;
-  }
-  .triple{
-    display: block;
-    float: none;
-    width: 100%;
-    .column{
-      float: none;
-      width: 100%;
-    }
-  }
-}
+@import 'mobile';
