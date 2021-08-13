@@ -1,5 +1,10 @@
 @import 'config';
 @import 'utilities';
+@import 'buttons';
+
+a{
+  text-decoration: none;
+}
 
 body{
   @include set-background($background-color);
@@ -95,6 +100,7 @@ body{
   }
 
   h1{
+    font-size:24px;
     color:$background-color;
     text-align: center;
   }

@@ -3,10 +3,13 @@
   margin:auto;
 }
 
+.center{
+  text-align: center;
+}
 
 //set text color based on background
 @function set-text-color($color){
-  @if (lightness($color) > 70) {
+  @if (lightness($color) > 60) {
     @return $dark-color;
   }
   @else
