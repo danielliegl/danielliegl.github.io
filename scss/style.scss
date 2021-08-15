@@ -70,30 +70,41 @@ body{
   }
 }
 
+.main-block{
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#sidebar{
+  padding: 10px 10px;
+  flex-basis: 40%;
+  @include set-background($dark-color);
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+
 #main{
-  float: left;
-  width:60%;
   padding: 30px 30px;
   box-sizing: border-box;
+  flex-basis: 55%;
 
   h2{
     margin-bottom: 15px;
     font-size: 24px;
   }
-
-
 }
 
 .triple{
   display: flex;
+  justify-content: space-around;
   clear: both;
   margin: auto auto;
   color:$background-color;
 
   .column{
     @include set-background($dark-color);
-    float: right;
-    width:25%;
+    flex-basis:25%;
     margin: 1em auto;
     background-color: $dark-color;
     padding: 1em;
@@ -118,19 +129,6 @@ body{
     margin-bottom: 0.4em;
     margin-left: 0.5em;
   }
-}
-
-#sidebar{
-  float:right;
-  width:40%;
-  padding: 10px 10px;
-  @include set-background($dark-color);
-  margin-top: 30px;
-  box-sizing: border-box;
-}
-
-img{
-  width:100%;
 }
 
 #main-footer

@@ -1,40 +1,40 @@
-@media(max-width:600px){
+@media(max-width:768px){
+  .main-block{
+    display: block;
+  }
+  
   #main{
-    float:none;
     width:100%;
   }
   #sidebar
   {
-    float:none;
     width:100%;
   }
   .triple{
     display: block;
-    float: none;
     width: 100%;
     .column{
-      float: none;
       width: 100%;
     }
   }
 }
 
 @media(orientation: portrait){
+  .main-block{
+    display: block;
+  }
+  
   #main{
-    float:none;
     width:100%;
   }
   #sidebar
   {
-    float:none;
     width:100%;
   }
   .triple{
     display: block;
-    float: none;
     width: 100%;
     .column{
-      float: none;
       width: 100%;
     }
   }
