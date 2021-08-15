@@ -38,12 +38,16 @@
       width: 100%;
     }
   }
+  #main-footer
+  {
+    display:none;
+  }
 }
 
 @media(orientation: landscape)
 {
   #main-footer
   {
-    display:block;
+    display:none;
   }
 }
