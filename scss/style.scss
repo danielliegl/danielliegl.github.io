@@ -11,7 +11,7 @@ body{
   padding-bottom: 100px;
 }
 
-#main-header{
+.main-header{
   background-color: $primary-color;
   color:white;
 
@@ -22,7 +22,7 @@ body{
   }
 }
 
-#navbar {
+.navbar {
   background-color: $dark-color;
   li{
     display:inline;
@@ -48,13 +48,13 @@ body{
 
 }
 
-#highlight{
+.highlight{
   color:white;
   min-height: fit-content;
   text-align: center;
   font-size: 30px;
   padding:1em;
-  background-image: url(../images/showcase.jpg);
+  background-image: url(./images/showcase.jpg);
   background-position: center center;
 }
 
@@ -76,7 +76,7 @@ body{
   justify-content: space-around;
 }
 
-#sidebar{
+.sidebar{
   padding: 10px 10px;
   flex-basis: 40%;
   @include set-background($dark-color);
@@ -84,7 +84,7 @@ body{
   box-sizing: border-box;
 }
 
-#main{
+.main{
   padding: 30px 30px;
   box-sizing: border-box;
   flex-basis: 55%;
@@ -131,7 +131,7 @@ body{
   }
 }
 
-#main-footer
+.main-footer
 {
   position: fixed;
   bottom: 0;
